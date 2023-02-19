@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Select one among the options
+        </title>
+        <style>
+            body
+            {
+                background-color: lightslategray;
+            }
+        </style>
+        <script>
+                function f1()
+                {
+                    var s1 = document.getElementById("s1");
+                    var s2 = document.getElementById("s2");
+                    var s3 = document.getElementById("s3");
+                    var s4 = document.getElementById("s4");
+
+                    if(s1.checked == true)
+                    alert("You're " + s1.value);
+                    else if(s2.checked == true)
+                    alert("You're " + s2.value);
+                    else if(s3.checked == true)
+                    alert("You're " + s3.value);
+                    else if(s4.checked == true)
+                    alert("You're " + s4.value);
+                    else
+                    alert("You are not interested in any programming language of the below");
+                }
+        </script>
+    </head>
+    <body>
+      <input name="select" type="radio" id="s1" value="C enthusiastic">C programming language</input><br>
+      <input name="select" type="radio" id="s2" value="JavaScript enthusiastic">JavaScript programming language</input><br>
+      <input name="select" type="radio" id="s3" value="C# enthusiastic">C# programming language</input><br>
+      <input name="select" type="radio" id="s4" value="Python enthusiastic">Python programming language</input><br>
+      <button id="b1" onclick="f1()">Click here</button>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <script>
+                  function f1(){
+                    var username = document.getElementById("id1");
+                var password = document.getElementById("id2");
+                var number = document.getElementById("id3");
+
+
+            if(username.value.trim()=="")
+            {
+                alert("You have to fill UserName");
+                username.style.border="solid 1px red";
+                return false;
+            }
+            else if(password.value.trim().length < 5)
+            {
+                alert("Password is too short");
+                password.style.border="solid 1px red";
+                return false;
+            }
+            else if(number.value.length != 10)
+            {
+                alert("You have to fill 10 digits number in this form");
+                number.style.border="solid 1px red";
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        </script>
+    </head>
+    <body style="background-color: lightblue">
+        <form action="forformvalidation.html" onsubmit="return f1();">
+         <table>
+            <tr>
+                <td>User-Name:&emsp;</td>
+                <td><input id="id1" type="text" placeholder="Enter UserName"></input></td>
+            </tr>
+            <tr>
+                <td>Password:&emsp;</td>
+                <td><input id="id2" type="password" placeholder="Enter Password"></input></td>
+            </tr>
+            <tr>
+                <td>Mobile-Number:&emsp;</td>
+                <td><input id="id3" type="number" placeholder="Enter Mobile-Number"></input></td>
+            </tr>
+         </table>
+         <button>Submit</button>
+        </form>
+    </body>
+</html>

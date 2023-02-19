@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Working of document.getElementsByClassName
+        </title>
+        <script>
+               function f1()
+               {
+                  var a = document.getElementsByClassName("paragraph");
+                  for(var i = 0; i<a.length; i+=2)
+                {
+                  a[i].style.color = "lightblue";
+                }
+                }
+        </script>
+    </head>
+    <body>
+        <p class="paragraph">My name is Sameer Neupane.</p>
+        <p class="paragarph">I am 18 years old.</p>
+        <p class="paragraph">I am studying in class 12.</p>
+        <p class="paragraph">I am from Management faculty.</p>
+        <p class="paragraph">I live in Devdaha-3, Tatera.</p>
+        <button onclick="f1()">Click here</button>
+    </body>
+</html>

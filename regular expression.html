@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Regular Expressions in JavaScript</title>
+        <script>
+            function f2(){
+             var a = document.getElementById("id1").value;
+             var regular_expression = /E00/<!--/double forward slash check the number inside the string exist that particular number exist or not inside it/-->
+             if(regular_expression.test(a))
+             {
+                alert("Valid UserName");
+             }
+             else
+             {
+                alert("Invalid UserName");
+                document.getElementById("label1").style.visibility="visible";
+                document.getElementById("id1").style.border="solid 2px red";
+             }
+                         }
+        </script>
+    </head>
+    <body>
+        <form action="regrlarexp.html"></form>
+        <table>
+            <tr>
+                <td>UserName:&emsp;</td>
+                <td><input id="id1" placeholder="Enter UserName" /><br></td>
+                <td><label id="label1" style =" color: red; visibility: hidden">Invalid UserName</label></td>
+            </tr>
+        </table>
+        <button onclick="f2()">Submit</button>
+    </body>
+</html>

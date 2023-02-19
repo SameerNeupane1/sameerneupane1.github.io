@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Timing Functions in JavaScript</title>
+    <script>
+        id = 0;
+        seconds = 0;
+             function printmsg()
+             {
+               document.getElementById("notdef").innerHTML = seconds + " seconds";
+               seconds++;
+             }
+
+             function start()
+             {
+               id = window.setInterval(printmsg,1000);<!--It take time in milliseconds so I'm writing it in milliseconds-->
+             }
+
+             function stop()
+             {
+                window.clearInterval(id);
+             }
+    </script>
+    </head>
+    <body>
+        <button id="id1" onclick="start()">Start</button>
+        <h2 id="notdef">This webpage is for timing functions.If you start than timer will show the time </h2>
+        <button id="2" onclick="stop()">Stop</button>
+    </body>
+</html>

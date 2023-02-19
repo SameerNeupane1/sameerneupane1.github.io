@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+             Option Select
+        </title>
+        <style>
+            body
+            {
+                background-color: lightcyan;
+                margin: 20px;
+            }
+        </style>
+        <script>
+          function f1()
+          {
+               var select = document.getElementById("select");
+               alert(select.options[select.selectedIndex].value);
+          }
+        </script>
+    </head>
+    <body>
+        <select id="select">
+            <option value="You will be backend developer">Backend</option>
+            <option value="You will be frontend developer">Frontend</option>
+            <option value="You will be full stack developer">Full-Stack</option>
+        </select>
+            <button onclick="f1()">Click here</button>
+    </body>
+</html>
